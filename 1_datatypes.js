@@ -12,10 +12,15 @@ let a;
 
  // var scope var his function scope we can use it through out function in any block
  function varScope(){
-    var x=25;
+    x=25;
+    console.log(25);
+    var x;
+    let y = 35;
     if(x==25){
         console.log(x)
         var z= 30;
+        y=449;
+        console.log(y)
     }
 
     console.log(z);  // we can not do this with let because let his only block scope
